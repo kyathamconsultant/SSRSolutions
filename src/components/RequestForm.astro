@@ -1,20 +1,36 @@
 
-<section id="request" class="py-20">
+<section id="request" class="py-20 bg-gray-50 dark:bg-slate-900">
   <div class="max-w-md mx-auto">
     <h2 class="text-3xl font-bold text-center mb-6">Request a Service</h2>
-    <form class="space-y-4 bg-white dark:bg-slate-900 p-6 rounded-xl shadow">
-      <input class="w-full p-3 border rounded" placeholder="Full Name" required />
-      <input class="w-full p-3 border rounded" placeholder="Email" required />
-      <input class="w-full p-3 border rounded" placeholder="Phone" />
-      <select class="w-full p-3 border rounded">
-        <option>Select Service</option>
-        <option>Software Installation</option>
-        <option>CCTV Installation</option>
-        <option>Wall Mounting</option>
-        <option>Network Setup</option>
-      </select>
-      <textarea class="w-full p-3 border rounded" placeholder="Additional Details"></textarea>
-      <button class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Submit</button>
+    <form action="#" method="post" class="space-y-4 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Full Name</label>
+        <input name="name" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Full Name" required />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Email</label>
+        <input name="email" type="email" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Email" required />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Phone</label>
+        <input name="phone" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Phone" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Service</label>
+        <select name="service" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary">
+          <option value="">Select Service</option>
+          <option>Software Installation</option>
+          <option>CCTV Installation</option>
+          <option>Wall Mounting</option>
+          <option>Network Setup</option>
+          <option>System Maintenance</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Additional Details</label>
+        <textarea name="details" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Additional Details"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition">Submit Request</button>
     </form>
   </div>
 </section>
