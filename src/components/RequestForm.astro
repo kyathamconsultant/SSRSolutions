@@ -16,19 +16,43 @@
         <input name="phone" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Phone" />
       </div>
       <div>
-        <label class="block text-sm font-medium text-gray-700">Service</label>
-        <select name="service" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary">
-          <option value="">Select Service</option>
-          <option>Software Installation</option>
-          <option>CCTV Installation</option>
-          <option>Wall Mounting</option>
-          <option>Network Setup</option>
-          <option>System Maintenance</option>
+        <label class="block text-sm font-medium text-gray-700">Number of Staff</label>
+        <input name="staff" type="number" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Number of Staff" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Reason for Contact</label>
+        <select name="reason" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary">
+          <option value="">Select Reason</option>
+          <option>General Inquiry</option>
+          <option>Technical Support</option>
+          <option>Service Quote</option>
+          <option>Emergency Assistance</option>
+          <option>Consultation</option>
         </select>
       </div>
       <div>
-        <label class="block text-sm font-medium text-gray-700">Additional Details</label>
-        <textarea name="details" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Additional Details"></textarea>
+        <label class="block text-sm font-medium text-gray-700">Location</label>
+        <input name="location" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Location" />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Service</label>
+        <select name="service" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary">
+          <option value="">Select Service</option>
+          <option>Managed IT Services</option>
+          <option>Remote & Onsite IT Support</option>
+          <option>Microsoft 365 / Google Workspace Support</option>
+          <option>Cybersecurity Services</option>
+          <option>Cloud Services & Migration</option>
+          <option>Network Setup & Management</option>
+          <option>Backup & Disaster Recovery</option>
+          <option>Server Support & Virtualization</option>
+          <option>Hardware Supply & Setup</option>
+          <option>CCTV & Security System Installation</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Additional Information</label>
+        <textarea name="information" class="mt-1 w-full p-3 border rounded-lg focus:ring-primary focus:border-primary" placeholder="Additional Information"></textarea>
       </div>
       <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg hover:bg-primary-dark transition">Submit Request</button>
     </form>
